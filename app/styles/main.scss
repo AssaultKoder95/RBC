@@ -1,0 +1,133 @@
+// Color Schema
+$red: #FF6B6B;
+$maize: #FFE66D;
+$eng_green: #1A535C;
+$med_turqoise: #4ECDC4;
+$white: #F7FFF7;
+$black: #000000;
+$sidebar_blue: #2196F3;
+$sidebar_black: #555555;
+$sidebar_voilet: magenta;
+$sidebar_green: #4CAF50;
+// Default HTML Tags
+body {
+  background-color: $white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+// Custom Classes
+.page-footer {
+  padding-top: 0;
+  height: 35px;
+  font-size: 15px;
+  background-color: $red;
+}
+
+.label-text {
+  color: $red;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.label-text a:not(btn) {
+  color: $black !important;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute;
+  /* Position them relative to the browser window */
+  left: -80px;
+  /* Position them outside of the screen */
+  transition: 0.4s;
+  /* Add transition on hover */
+  padding: 15px;
+  /* 15px padding */
+  width: 110px;
+  /* Set a specific width */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 14px;
+  /* Increase font size */
+  color: $white;
+  border-radius: 0 5px 5px 0;
+  /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0;
+  /* On mouse-over, make the elements appear as they should */
+}
+/* The about link: 20px from the top with a green background */
+#camps {
+  top: 100px;
+  background-color: $sidebar_green;
+}
+
+#recent {
+  top: 160px;
+  background-color: $sidebar_black;
+}
+
+#donate {
+  top: 220px;
+  background-color: $sidebar_blue;
+}
+
+#benefits {
+  top: 280px;
+  background-color: $sidebar_voilet;
+}
+// Right Sidenav
+#myRightSidenav a {
+  position: absolute;
+  right: -160px;
+  transition: 0.4s;
+  padding: 10px;
+  width: 200px;
+  text-decoration: none;
+  color: $white;
+  border-radius: 5px 0 0 5px;
+}
+
+#myRightSidenav a:hover {
+  right: 0;
+}
+
+#filter {
+  top: 100px;
+  background-color: $sidebar_blue;
+}
+
+.btn-green {
+  background-color: $eng_green;
+  font-size: 14px !important;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.btn-blue {
+  background-color: $sidebar_blue;
+  color: $black;
+  font-size: 14px !important;
+  margin-left: 30px;
+  padding: 0 10px;
+}
+.btn-maize:hover, .btn-green:hover {
+  background-color: $sidebar_green;
+}
+
+// Navbar
+.nav-wrapper a{
+  margin-left: 35px;
+  font-size: 22px;
+}
+nav {
+  margin-bottom: 10px;
+}
